@@ -21,7 +21,7 @@ import java.util.List;
  * @see edu.baylor.GroupFive.database.daos.BaseDAO
  * @author Cole
  */
-public class ProductsDAO extends BaseDAO<Product> {
+public class ProductsDAO implements Dao<Product> {
     public ProductsDAO(){}
 
 

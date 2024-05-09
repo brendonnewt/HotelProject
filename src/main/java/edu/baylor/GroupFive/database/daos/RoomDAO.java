@@ -20,7 +20,7 @@ import java.util.*;
  * @author Brendon
  * @author Cole
  */
-public class RoomDAO extends BaseDAO<Room>{
+public class RoomDAO implements Dao<Room> {
 
     public RoomDAO(){}
 

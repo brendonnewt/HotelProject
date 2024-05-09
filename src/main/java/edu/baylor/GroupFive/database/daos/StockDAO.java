@@ -12,7 +12,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StockDAO extends BaseDAO<Stock>{
+public class StockDAO implements Dao<Stock>{
     public StockDAO(){}
 
 

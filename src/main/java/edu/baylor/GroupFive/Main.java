@@ -7,7 +7,6 @@ import edu.baylor.GroupFive.ui.utils.Page;
 import edu.baylor.GroupFive.ui.utils.interfaces.InputDelegate;
 import edu.baylor.GroupFive.database.DbSetup;
 import edu.baylor.GroupFive.database.controllers.AccountController;
-import edu.baylor.GroupFive.util.logging.G5Logger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
@@ -26,7 +25,6 @@ public class Main {
      * @see edu.baylor.GroupFive.util.logging.G5Logger
      */
     public static void main(String[] args) {
-        G5Logger.initLogging(args);
         Logger logger = LogManager.getLogger(Main.class);
         logger.info("Logging initiated. Invoking dbSetup...");
 

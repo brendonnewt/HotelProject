@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import edu.baylor.GroupFive.util.CoreUtils;
-import edu.baylor.GroupFive.database.daos.ReservationDao;
 import edu.baylor.GroupFive.models.Reservation;
 import edu.baylor.GroupFive.util.exceptions.BadConnectionException;
 import edu.baylor.GroupFive.util.logging.G5Logger;
@@ -30,7 +29,7 @@ import org.apache.logging.log4j.Logger;
   * @author Cole
   * @author Icko
   */
- public class ReservationServices implements ReservationDao {
+ public class ReservationServices {
     private static final Logger logger = LogManager.getLogger(ReservationServices.class.getName());
 
      /**

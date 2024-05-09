@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 import edu.baylor.GroupFive.database.DbConnection;
 import edu.baylor.GroupFive.models.Transaction;
 import edu.baylor.GroupFive.util.CoreUtils;
@@ -24,7 +22,7 @@ import edu.baylor.GroupFive.util.logging.G5Logger;
  * @see edu.baylor.GroupFive.database.daos.BaseDAO
  * @author Brendon
  */
-public class TransactionDAO extends BaseDAO<Transaction> {
+public class TransactionDAO implements Dao<Transaction> {
 
     public TransactionDAO() {}
 

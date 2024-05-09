@@ -20,17 +20,17 @@ import java.sql.SQLException;
   *
   * https://docs.oracle.com/javase/8/docs/api/java/sql/DriverManager.html#getConnection-java.lang.String-
   *
-  * {@link Dao#get(int)} 
-  * {@link Dao#getAll()} 
-  * {@link Dao#save(Object)} 
-  * {@link Dao#insert(Object)} 
-  * {@link Dao#update(Object)} 
-  * {@link Dao#delete(Object)} 
+  * {@link DAO#get(int)} 
+  * {@link DAO#getAll()} 
+  * {@link DAO#save(Object)} 
+  * {@link DAO#insert(Object)} 
+  * {@link DAO#update(Object)} 
+  * {@link DAO#delete(Object)} 
   *
   * @param <T> Object this DAO is meant to interact with
   * @author Icko
   * */
-public interface Dao<T> {
+public interface DAO<T> {
 
     /**
      * Retrieves an object from our database matching the specified id.

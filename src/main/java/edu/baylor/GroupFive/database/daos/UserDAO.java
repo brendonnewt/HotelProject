@@ -11,12 +11,12 @@ import java.util.List;
 /**
  * The UserDAO class provides methods for interacting with User data in a database.
  *
- * This class implements the BaseDAO abstract class.
+ * This class implements the {@code Dao<T>} interface.
  * 
- * @see edu.baylor.GroupFive.database.daos.BaseDAO
+ * @see edu.baylor.GroupFive.database.daos.Dao
  * @author Brendon
  */
-public class UserDAO extends BaseDAO<User> {
+public class UserDAO implements Dao<User> {
 
     public UserDAO() {}
 

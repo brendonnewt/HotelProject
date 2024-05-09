@@ -1,7 +1,6 @@
 package edu.baylor.GroupFive.database;
 
 import edu.baylor.GroupFive.util.CoreUtils;
-import edu.baylor.GroupFive.util.logging.G5Logger;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -48,7 +47,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM USERs");
             } catch (SQLException e) {
                 // The "USERs" table does not exist, so create it
-                G5Logger.logger.info("Creating User Table");
+                logger.info("Creating User Table");
                 statement.executeUpdate(sqlCreateUserTable);
                 ps = connection.prepareStatement(BASE_USER_INSERT_QUERY);
                 initializeUsers(ps);
@@ -59,7 +58,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM ROOM");
             } catch (SQLException e) {
                 // The "ROOM" table does not exist, so create it
-                G5Logger.logger.info("Creating Room Table");
+                logger.info("Creating Room Table");
                 statement.executeUpdate(sqlCreateRoomTable);
                 ps = connection.prepareStatement(BASE_ROOM_INSERT_QUERY);
                 initializeRooms(ps);
@@ -70,7 +69,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM RESERVATIONs");
             } catch (SQLException e) {
                 // The "RESERVATION" table does not exist, so create it
-                G5Logger.logger.info("Creating Reservation Table");
+                logger.info("Creating Reservation Table");
                 statement.executeUpdate(sqlCreateReservationTable);
                 ps = connection.prepareStatement(BASE_RESERVATION_INSERT_QUERY);
                 initializeReservations(ps);
@@ -81,7 +80,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM TRANSACTIONS");
             } catch (SQLException e) {
                 // The "TRANSACTIONS" table does not exist, so create it
-                G5Logger.logger.info("Creating Transactions Table");
+                logger.info("Creating Transactions Table");
                 statement.executeUpdate(sqlCreateTransactionsTable);
                 ps = connection.prepareStatement(BASE_TRANSACTION_INSERT_QUERY);
                 initializeTransactions(ps);
@@ -92,7 +91,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM PRODUCTS");
             } catch (SQLException e) {
                 // The "PRODUCTS" table does not exist, so create it
-                G5Logger.logger.info("Creating Products Table");
+                logger.info("Creating Products Table");
                 statement.executeUpdate(sqlCreateProductsTable);
                 ps = connection.prepareStatement(BASE_PRODUCT_INSERT_QUERY);
                 initializeProducts(ps);
@@ -104,7 +103,7 @@ public class DbSetup {
                 statement.executeQuery("SELECT * FROM STOCKS");
             } catch (SQLException e) {
                 // The "STOCKS" table does not exist, so create it
-                G5Logger.logger.info("Creating Stocks Table");
+                logger.info("Creating Stocks Table");
                 statement.executeUpdate(sqlCreateStocksTable);
                 ps = connection.prepareStatement(BASE_STOCK_INSERT_QUERY);
                 initializeStocks(ps);

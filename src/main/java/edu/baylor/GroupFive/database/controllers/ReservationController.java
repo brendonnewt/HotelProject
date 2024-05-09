@@ -26,7 +26,6 @@ import java.util.List;
  * */
 public class ReservationController {
     private static final Logger logger = LogManager.getLogger(ReservationController.class.getName());
-    private static final Marker RESERVATIONS = MarkerManager.getMarker("RESERVATIONS");
 
     private ReservationController() {}
 
