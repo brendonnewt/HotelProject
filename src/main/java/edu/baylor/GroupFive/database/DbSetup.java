@@ -30,8 +30,6 @@ public class DbSetup {
 
     private static final Logger logger = LogManager.getLogger(DbSetup.class.getName());
 
-    // ALL QUERIES MOVED TO BOTTOM OF CLASS - brendon
-
     /**
      * Tears down our database, creates all tables, then inserts initial values
      */
